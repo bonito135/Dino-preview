@@ -1,0 +1,182 @@
+@import "../Variables";
+
+.dinoPreview {
+  width: 100vw;
+  height: 100vh;
+  background-color: $secondary_color;
+
+  display: grid;
+
+  overflow: hidden;
+
+  touch-action: none;
+
+  @media only screen and (max-width: 950px) {
+    grid-template-columns: 100vw;
+    grid-template-rows: 50vh 50vh;
+
+    .infoBlock {
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: $primary_color;
+
+      .upperInfoBlock {
+        width: 100%;
+        height: 35px;
+
+        img {
+          width: auto;
+          height: 100%;
+          transform: translate(10px, 5px);
+        }
+      }
+
+      .middleInfoBlock {
+        width: 100%;
+        max-height: 200px;
+
+        .infoBlockHeading {
+          width: auto;
+          height: 40px;
+          font-size: 20px;
+
+          margin-top: 20px;
+          transform: translateX(20px);
+        }
+
+        .infoBlockText {
+          justify-self: center;
+
+          width: 85%;
+          height: 150px;
+
+          transform: translateX(20px);
+
+          font-size: 14px;
+        }
+      }
+
+      .bottomInfoBlock {
+        width: 92%;
+        height: 35px;
+
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        justify-content: space-between;
+
+        transform: translateX(15px);
+
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+
+    .block3D {
+      grid-column: 1/2;
+      grid-row: 1/2;
+
+      width: 100%;
+      height: 100%;
+
+      display: grid;
+      grid-template-rows: 85% 15%;
+
+      .container {
+        width: 100vw;
+        height: 100%;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+        justify-self: center;
+        align-self: end;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 951px) {
+    grid-template-columns: minmax(350px, 400px) minmax(600px, 1fr);
+    grid-template-rows: 100vh;
+
+    .infoBlock {
+      width: auto;
+      height: 100%;
+      background-color: $primary_color;
+
+      display: grid;
+      grid-template-rows: 50px minmax(200px, auto) 35px;
+
+      .upperInfoBlock {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        img {
+          transform: translateX(15px);
+          width: auto;
+          height: 90%;
+        }
+      }
+
+      .middleInfoBlock {
+        justify-self: center;
+        width: 90%;
+        height: 100%;
+
+        .infoBlockHeading {
+          font-size: 30px;
+
+          margin-top: 30px;
+        }
+
+        .infoBlockText {
+          margin-top: 10px;
+        }
+      }
+
+      .bottomInfoBlock {
+        align-self: end;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+
+    .block3D {
+      width: 100%;
+      height: 100%;
+
+      display: grid;
+      grid-template-rows: 85% 15%;
+
+      justify-items: center;
+
+      .container {
+        width: 70vw;
+        height: 100%;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
