@@ -1,6 +1,4 @@
 import { createCamera } from "./components/camera.js";
-import { createTorusKnot } from "./components/torusKnot.js";
-import { createCube } from "./components/cube.js";
 import { createScene } from "./components/scene.js";
 import { createLights } from "./components/lights.js";
 import { createTRex } from "./components/TRex.js";
@@ -27,8 +25,6 @@ class World {
     controls = createControls(camera, renderer.domElement);
 
     // Objects
-    const torusKnot = createTorusKnot();
-    const cube = createCube();
     const { directionalLight, ambientLight, hemisphereLight } = createLights();
 
     resizer.resize();

@@ -32,7 +32,7 @@ export default function Homepage() {
             </p>
           </div>
 
-          <div className="previewExample">
+          <div className="previewExample" onClick={redirectToPreview}>
             <h2 className="previewDinoNameText">Tyrannosaurus Rex</h2>
             <img
               className="previewDinoImage"
@@ -47,7 +47,7 @@ export default function Homepage() {
             </p>
           </div>
 
-          <div className="previewExample">
+          <div className="previewExample" onClick={redirectToPreview}>
             <h2 className="previewDinoNameText">Tyrannosaurus Rex</h2>
             <img
               className="previewDinoImage"
@@ -62,7 +62,7 @@ export default function Homepage() {
             </p>
           </div>
 
-          <div className="previewExample">
+          <div className="previewExample" onClick={redirectToPreview}>
             <h2 className="previewDinoNameText">Tyrannosaurus Rex</h2>
             <img
               className="previewDinoImage"
@@ -77,7 +77,7 @@ export default function Homepage() {
             </p>
           </div>
 
-          <div className="previewExample">
+          <div className="previewExample" onClick={redirectToPreview}>
             <h2 className="previewDinoNameText">Tyrannosaurus Rex</h2>
             <img
               className="previewDinoImage"
@@ -92,7 +92,7 @@ export default function Homepage() {
             </p>
           </div>
 
-          <div className="previewExample">
+          <div className="previewExample" onClick={redirectToPreview}>
             <h2 className="previewDinoNameText">Tyrannosaurus Rex</h2>
             <img
               className="previewDinoImage"

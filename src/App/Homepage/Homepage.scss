@@ -45,6 +45,7 @@
         background-color: $secondary_color;
         display: grid;
         place-items: center;
+        cursor: pointer;
 
         .previewDinoNameText {
           width: 100%;

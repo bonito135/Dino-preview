@@ -14,9 +14,7 @@ class Loop {
   tick() {
     const delta = clock.getDelta();
 
-    this.updatables.map((object) => {
-      object.tick(delta);
-    });
+    this.updatables.map((object) => object.tick(delta));
   }
 
   start() {
